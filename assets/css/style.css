@@ -1,0 +1,42 @@
+@import url('reset.css');
+
+p {
+    color: #515151;
+}
+
+h1 {
+    color: black;
+    font-size: 20px; 
+    font-weight: 600;
+    line-height: 100%;
+}
+
+h3 {
+    color: black;
+    font-size: 14px; 
+    font-weight: 600;
+    line-height: 100%;
+}
+
+/* Estilização das seções */
+section {
+    margin: 100px auto; /*margem superior e inferior de 100px e auto (navegador calcula automaticamente as margens) para as laterais*/
+}
+
+
+/* Estilização do cabeçalho */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização do conteúdo do cabeçalho */
+
+
+
+
+
