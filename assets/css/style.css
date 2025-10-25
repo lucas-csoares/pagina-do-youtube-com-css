@@ -24,17 +24,76 @@ section {
 }
 
 
-/* Estilização do cabeçalho */
+/* ESTILIZAÇÃO GERAL DO MENU */
+
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilização do conteúdo do cabeçalho */
+
+header.menu {
+  padding: 10px 20px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#menu-left, #menu-right {
+    gap: 24px; /* espaçamento entre filhos */
+}
+
+
+/* ESTILIZAÇÃO DOS ITENS INTERNOS DO MENU */
+
+
+/* >>>>>>>>>>>>> MENU ESQUERDO >>>>>>>>>>>>>>>>>>>>>*/
+.logo img {
+  width: 90px;
+  height: 20px;
+  object-fit: contain; /* Mantém a proporção da imagem */
+}
+
+/* >>>>>>>>>>>>> MENU CENTRAL >>>>>>>>>>>>>>>>>>>>>*/
+#menu-center .search {
+  display: flex; /* Usando flexbox para alinhar os elementos */
+  align-items: center; /* Alinha verticalmente os itens ao centro */
+  width: 404px;
+  height: 40px;              
+  border: 1px solid #ccc; /* Borda cinza clara */     
+  border-radius: 3px; /* Bordas arredondadas */         
+  background: #fff;        
+}
+
+#menu-center .search input, 
+#menu-center .search button {
+    height: 100%; 
+    border: 0;
+}
+
+#menu-center .search input {
+  width: 100%; /* Faz o input ocupar todo o espaço disponível */                  
+  padding: 0 12px; /* Espaçamento interno à esquerda e à direita */
+  font-size: 14px; /* Tamanho da fonte */
+  color: #333;
+}   
+
+#menu-center .search button {
+  width: 57px; /* Largura fixa para o botão */
+  background-color: #f8f8f8; /* Cor de fundo do botão */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+/* >>>>>>>>>>>>> MENU DIREITO >>>>>>>>>>>>>>>>>>>>>*/
+#menu-right .avatar img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%; /* Torna a imagem circular */
+  object-fit: cover; /* Corta a imagem para preencher o contêiner */
+}
+
+
 
 
 
