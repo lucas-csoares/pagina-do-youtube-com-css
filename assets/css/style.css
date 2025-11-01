@@ -24,7 +24,7 @@ section {
 }
 
 
-/* ESTILIZAÇÃO GERAL DO MENU */
+/* >>>>>>>>>>>>> HEADER >>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .menu {
     display: flex;
@@ -45,17 +45,14 @@ header.menu {
 }
 
 
-/* ESTILIZAÇÃO DOS ITENS INTERNOS DO MENU */
-
-
-/* >>>>>>>>>>>>> MENU ESQUERDO >>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>> HEADER - ESQUERDA >>>>>>>>>>>>>>>>>>>>>*/
 .logo img {
   width: 90px;
   height: 20px;
   object-fit: contain; /* Mantém a proporção da imagem */
 }
 
-/* >>>>>>>>>>>>> MENU CENTRAL >>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>> HEADER - CENTRAL >>>>>>>>>>>>>>>>>>>>>*/
 #menu-center .search {
   display: flex; /* Usando flexbox para alinhar os elementos */
   align-items: center; /* Alinha verticalmente os itens ao centro */
@@ -85,13 +82,42 @@ header.menu {
   cursor: pointer; /* Muda o cursor ao passar sobre o botão */
 }
 
-/* >>>>>>>>>>>>> MENU DIREITO >>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>> HEADER - DIREITO >>>>>>>>>>>>>>>>>>>>>*/
 #menu-right .avatar img {
   width: 34px;
   height: 34px;
   border-radius: 50%; /* Torna a imagem circular */
   object-fit: cover; /* Corta a imagem para preencher o contêiner */
 }
+
+/* >>>>>>>>>>>>> MAIN - SECTION >>>>>>>>>>>>>>>>>>>>>>>>*/
+
+.content {
+  display: flex;
+  gap: 24px; /* Espaçamento entre os elementos */
+  margin-top: 15px; /* Espaçamento superior */
+}
+
+
+main {
+  flex-direction: row-reverse; /* Alinha os elementos da direita para a esquerda */
+  align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+
+.watching-video-section {
+  flex-direction: column; /* Alinha os elementos em coluna */
+  width: 100%; /* Ocupa toda a largura disponível */
+  margin-left: 75px; /* Espaçamento esquerdo */;
+}
+
+.watching-video-section .video {
+  width: 955px; /* Largura fixa para o vídeo */
+  height: 535px; /* Altura fixa para o vídeo */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
 
 
 
