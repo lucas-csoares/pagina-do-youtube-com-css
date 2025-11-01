@@ -114,8 +114,7 @@ main {
 .watching-video-section .video {
   width: 955px; /* Largura fixa para o vídeo */
   height: 535px; /* Altura fixa para o vídeo */
-  border-radius: 8px;
-  overflow: hidden;
+  overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites */
 }
 
 
