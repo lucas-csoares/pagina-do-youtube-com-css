@@ -4,6 +4,7 @@ p {
     color: #515151;
 }
 
+
 h1 {
     color: black;
     font-size: 20px; 
@@ -18,7 +19,7 @@ h3 {
     line-height: 100%;
 }
 
-/* Estilização das seções */
+
 section {
     margin: 100px auto; /*margem superior e inferior de 100px e auto (navegador calcula automaticamente as margens) para as laterais*/
 }
@@ -107,7 +108,7 @@ main {
 
 .watching-video-section {
   flex-direction: column; /* Alinha os elementos em coluna */
-  width: 100%; /* Ocupa toda a largura disponível */
+  width: 60%; /* Ocupa 60% da largura */
   margin-left: 75px; /* Espaçamento esquerdo */;
 }
 
@@ -116,6 +117,56 @@ main {
   height: 535px; /* Altura fixa para o vídeo */
   overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites */
 }
+
+.video iframe {
+  width: 100%; /* Faz o iframe ocupar toda a largura do contêiner */
+  height: 100%; /* Faz o iframe ocupar toda a altura do contêiner */
+  border: none; /* Remove a borda padrão do iframe */
+}
+
+/*Aplica sobre todos os elementos cuja classe é video-actions*/
+.watching-video-section .video-actions {
+  display: flex; /* Usando flexbox para alinhar os elementos */
+  justify-content: space-between; /* Espaça os elementos igualmente */
+  align-items: center; /* Alinha verticalmente os itens ao centro */
+  gap: 10px; /* Espaçamento entre os elementos */ 
+}
+
+.dio-action .dio-logo img {
+  width: 42px; /* Largura fixa para o logotipo */
+  height: 42px; /* Altura fixa para o logotipo */
+  border-radius: 50%; /* Torna a imagem circular */
+  object-fit: cover; /* Corta a imagem para preencher o contêiner */
+}
+
+.video-inscrever button {
+  background-color: #cc0000; /* Cor de fundo vermelha */
+  width: 159px; /* Largura fixa */
+  height: 36px; /* Altura fixa */
+  color: #FFF; /* Cor do texto branca */
+  border: none; /* Remove a borda padrão */
+  padding: 10px 16px; /* Espaçamento interno */
+  border-radius: 2px; /* Bordas levemente arredondadas */
+  cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+  font-size: 14px; /* Tamanho da fonte */
+  font-weight: 600; /* Peso da fonte */
+  text-transform: uppercase;
+}
+
+.watching-video-section .video-description-02 {
+  width: 57%; /* largura de 57% do contêiner pai */
+  height: 64px; /* altura fixa de 64px */
+}
+
+
+.video-description-02 p {
+  font-size: 14px; /* tamanho confortável para leitura */
+  font-weight: 400; /* texto regular, sem negrito */
+  line-height: 1.5; /* espaçamento entre linhas */
+  text-align: left; /* garante alinhamento à esquerda */
+}
+
+
 
 
 

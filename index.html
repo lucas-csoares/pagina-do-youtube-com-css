@@ -203,55 +203,103 @@
 
         <section class="content watching-video-section">         
                 <div class="video">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zGPS2BilrJI?si=8-0MNAxnuJIVncsC"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe 
+                        src="https://www.youtube.com/embed/zGPS2BilrJI?si=8-0MNAxnuJIVncsC"
+                        title="YouTube video player" 
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"   
+                        allowfullscreen>
+                    </iframe>
                 </div>
 
                 <h1>TUDO o que um DESENVOLVEDOR FRONT-END deve saber! | Getting Started #23</h1>
 
                 <div class="video-actions">
-                    <div class="dio-action">
-                        <div class="dio-logo"></div>
-                        DIO
-                        <br>
-                        83,3 mil inscritos
+                    <div class="video-actions dio-action">
+                        <div class="dio-logo">
+                            <img src="assets/images/dio-logo.jpg" title="Logotipo DIO" alt="Logotipo DIO">
+                        </div>
+                        <div>
+                            <strong>DIO</strong>
+                            <br>
+                            <span style="color: #515151">83,3 mil inscritos</span>
+                        </div>
                     </div>
 
                     <div class="video-inscrever">
                         <button type="submit">Inscreva-se</button>
                     </div>
 
-                    <div class="video-like">
-                        <div class="like-logo"></div>
-                        2 mil
-                    </div>
-
-                    <div class="video-dislike">
-                        <div class="dislike-logo"></div>
-                        Não gostei
-                    </div>
-
-                    <div class="video-share">
-                        <div class="share-logo"></div>
-                        Compartilhar
-                    </div>
-
-                    <div class="video-download">
-                        <div class="download-logo">
-                            Download
+                    <div class="video-actions video-like">
+                        <div class="like-logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"  viewBox="0 0 24 24" fill="none" stroke="#000000"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3" />
+                            </svg>
                         </div>
+                        <div><strong>2 mil</strong></div>
+                    </div>
+
+                    <div class="video-actions video-dislike">
+                        <div class="dislike-logo">
+                            <?xml version="1.0" encoding="utf-8"?>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 14C21 14.5523 20.5523 15 20 15H17V3H20C20.5523 3 21 3.44772 21 4V14Z" stroke="#000000"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M17 13V5L15.0077 3.6718C14.3506 3.23375 13.5786 3 12.7889 3H7.54138C6.07486 3 4.82329 4.06024 4.5822 5.5068L3.38813 12.6712C3.18496 13.8903 4.12504 15 5.36092 15H10"
+                                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M10 15L9.31283 18.4358C9.13411 19.3294 9.64876 20.2163 10.5133 20.5044V20.5044C11.3664 20.7888 12.2987 20.4026 12.7008 19.5983L16 13H17"
+                                    stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div><strong>Não gostei</strong></div>
+                    </div>
+
+                    <div class="video-actions video-share">
+                        <div class="share-logo">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_15_72)">
+                                    <rect width="24" height="24" fill="white" />
+                                    <circle cx="7" cy="12" r="2" stroke="#000000" stroke-linejoin="round" />
+                                    <circle cx="17" cy="6" r="2" stroke="#000000" stroke-linejoin="round" />
+                                    <path d="M15 7L8.5 11" stroke="#000000" />
+                                    <circle cx="17" cy="18" r="2" stroke="#000000" stroke-linejoin="round" />
+                                    <path d="M8.5 13.5L15 17" stroke="#000000" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_15_72">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div><strong>Compartilhar</strong></div>
+                    </div>
+
+                    <div class="video-actions video-download">
+                        <div class="download-logo">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M5.625 15C5.625 14.5858 5.28921 14.25 4.875 14.25C4.46079 14.25 4.125 14.5858 4.125 15H5.625ZM4.875 16H4.125H4.875ZM19.275 15C19.275 14.5858 18.9392 14.25 18.525 14.25C18.1108 14.25 17.775 14.5858 17.775 15H19.275ZM11.1086 15.5387C10.8539 15.8653 10.9121 16.3366 11.2387 16.5914C11.5653 16.8461 12.0366 16.7879 12.2914 16.4613L11.1086 15.5387ZM16.1914 11.4613C16.4461 11.1347 16.3879 10.6634 16.0613 10.4086C15.7347 10.1539 15.2634 10.2121 15.0086 10.5387L16.1914 11.4613ZM11.1086 16.4613C11.3634 16.7879 11.8347 16.8461 12.1613 16.5914C12.4879 16.3366 12.5461 15.8653 12.2914 15.5387L11.1086 16.4613ZM8.39138 10.5387C8.13662 10.2121 7.66533 10.1539 7.33873 10.4086C7.01212 10.6634 6.95387 11.1347 7.20862 11.4613L8.39138 10.5387ZM10.95 16C10.95 16.4142 11.2858 16.75 11.7 16.75C12.1142 16.75 12.45 16.4142 12.45 16H10.95ZM12.45 5C12.45 4.58579 12.1142 4.25 11.7 4.25C11.2858 4.25 10.95 4.58579 10.95 5H12.45ZM4.125 15V16H5.625V15H4.125ZM4.125 16C4.125 18.0531 5.75257 19.75 7.8 19.75V18.25C6.61657 18.25 5.625 17.2607 5.625 16H4.125ZM7.8 19.75H15.6V18.25H7.8V19.75ZM15.6 19.75C17.6474 19.75 19.275 18.0531 19.275 16H17.775C17.775 17.2607 16.7834 18.25 15.6 18.25V19.75ZM19.275 16V15H17.775V16H19.275ZM12.2914 16.4613L16.1914 11.4613L15.0086 10.5387L11.1086 15.5387L12.2914 16.4613ZM12.2914 15.5387L8.39138 10.5387L7.20862 11.4613L11.1086 16.4613L12.2914 15.5387ZM12.45 16V5H10.95V16H12.45Z"
+                                    fill="#000000" />
+                            </svg>
+                            </div>
+                        <div><strong>Download</strong></div>
                     </div>
                 </div>
 
-                <p id="watch-info"><strong>28.418 visualizações Transmitido ao vivo em 23 ago. de 2022</strong></p>
-
-                <p>Bora falar de front-end?
-                    No Getting Started de hoje, o Felipão trouxe pouco sobre os fundamentos e por onde começar a sua
-                    jornada na área.
-                    Seja com HTML, CSS ou Javascript, criar páginas e apps lindões vai ficar ainda mais simples!
-                </p>
+                <div class="video-description-01">
+                    <strong>28.418 visualizações Transmitido ao vivo em 23 ago. de 2022</strong>
+                </div>
+                
+                <div class="video-description-02">
+                    <p>Inicie uma aventura imersiva no mundo do Front-end com HTML e CSS. Para isso, criaremos uma landing page com a temática da série Stranger Things, a qual contará com a implementação de um theme switcher (light e dark) para explorarmos os mistérios do mundo invertido.
+                    </p>
+                </div>
         </section>
 
     </main>

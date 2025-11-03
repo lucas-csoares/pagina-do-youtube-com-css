@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
 
 * {
-    font-family: 'Raleway', sans-serif; /*Raleway: fonte específica; sans-serife: família genérica (sem serifa).*/
+    font-family: 'Roboto', sans-serif; /*aplica a fonte roboto para todos os elementos*/
     margin: 0;
     padding: 0;
     box-sizing: border-box; /*redimensiona o conteúdo do elemento de forma que somando o padding e o border do elemento ele tenha uma largura total definida previamente.*/
