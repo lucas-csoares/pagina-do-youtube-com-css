@@ -46,14 +46,13 @@ header.menu {
 }
 
 
-/* >>>>>>>>>>>>> HEADER - ESQUERDA >>>>>>>>>>>>>>>>>>>>>*/
 .logo img {
   width: 90px;
   height: 20px;
   object-fit: contain; /* Mantém a proporção da imagem */
 }
 
-/* >>>>>>>>>>>>> HEADER - CENTRAL >>>>>>>>>>>>>>>>>>>>>*/
+
 #menu-center .search {
   display: flex; /* Usando flexbox para alinhar os elementos */
   align-items: center; /* Alinha verticalmente os itens ao centro */
@@ -83,7 +82,6 @@ header.menu {
   cursor: pointer; /* Muda o cursor ao passar sobre o botão */
 }
 
-/* >>>>>>>>>>>>> HEADER - DIREITO >>>>>>>>>>>>>>>>>>>>>*/
 #menu-right .avatar img {
   width: 34px;
   height: 34px;
@@ -91,20 +89,23 @@ header.menu {
   object-fit: cover; /* Corta a imagem para preencher o contêiner */
 }
 
-/* >>>>>>>>>>>>> MAIN - SECTION >>>>>>>>>>>>>>>>>>>>>>>>*/
-
-.content {
-  display: flex;
-  gap: 24px; /* Espaçamento entre os elementos */
-  margin-top: 15px; /* Espaçamento superior */
-}
-
+/* >>>>>>>>>>>>> MAIN >>>>>>>>>>>>>>>>>>>>>>>>*/
 
 main {
   flex-direction: row-reverse; /* Alinha os elementos da direita para a esquerda */
   align-items: flex-start; /* Alinha os itens ao topo */
 }
 
+
+.content {
+  display: flex; /* Usando flexbox para alinhar os elementos */
+  gap: 15px; /* Espaçamento entre os elementos */
+  margin-top: 15px; /* Espaçamento superior */
+}
+
+/*OBS: por padrão, para o display: flex temos flex-direction: row*/
+
+/* >>>>>>>>>>>>> MAIN - SECTION >>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .watching-video-section {
   flex-direction: column; /* Alinha os elementos em coluna */
@@ -124,7 +125,6 @@ main {
   border: none; /* Remove a borda padrão do iframe */
 }
 
-/*Aplica sobre todos os elementos cuja classe é video-actions*/
 .watching-video-section .video-actions {
   display: flex; /* Usando flexbox para alinhar os elementos */
   justify-content: space-between; /* Espaça os elementos igualmente */
@@ -165,6 +165,68 @@ main {
   line-height: 1.5; /* espaçamento entre linhas */
   text-align: left; /* garante alinhamento à esquerda */
 }
+
+
+/* >>>>>>>>>>>>> MAIN - ASIDE >>>>>>>>>>>>>>>>>>>>>>>>*/
+
+
+.content.sidebar {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* controla o espaço entre os vídeos */
+}
+
+/* OBS: Todo content é display flex, logo, o content sidebar é display flex*/
+
+
+/* Cada bloco de vídeo */
+.video-info {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+
+.video-info-image {
+  flex-shrink: 0; /* evita que a imagem "esmague" */
+}
+
+.video-info-image img {
+  width: 168px;
+  height: 94px;
+  object-fit: cover;
+  display: block; /* remove espaços indesejados de inline-block */
+  border-radius: 4px;
+}
+
+
+/* Textos ao lado da imagem */
+.video-info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6px;
+  font-family: Arial, sans-serif;
+}
+
+.video-info-text h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+  color: #0f0f0f;
+}
+
+.video-info-text p {
+  font-size: 12px;
+  color: #606060;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
 
 
 
